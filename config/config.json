@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "root",
+    "password": "",
+    "database": "thegroupthatworkz",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorsAliases": false
+  },
+  "production": {
+    "username": "h1iufk8kzes5e9vq",
+    "password": "e5w8bo4oru1r6gya",
+    "database": "wfmortghmomy5ehp",
+    "host": "u0zbt18wwjva9e0v.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql",
+    "operationsAliases": false
+  }
+}
