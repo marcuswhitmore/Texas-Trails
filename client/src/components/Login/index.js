@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 class LoginBox extends Component {
   // Setting the component's initial state
@@ -52,14 +53,14 @@ class LoginBox extends Component {
           />
 
           <button onClick={this.handleFormSubmit} className="submitButtons">
-            Login
+            <Link to="/user">Login</Link>
           </button>
           <button
             onClick={this.handleFormSubmit}
             className="submitButtons"
             id="signup"
           >
-            Sign Up
+            <Link to="/signup">Sign In</Link>
           </button>
         </form>
         <div className="forgotPass">
