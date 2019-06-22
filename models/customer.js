@@ -7,7 +7,12 @@ module.exports = function(sequelize, DataTypes) {
     name: {
       type: DataTypes.STRING,
       // If a customer is to be created, they must have a name
-      allowNull: false
+      
+    },
+    name: {
+      type: DataTypes.STRING,
+      // If a customer is to be created, they must have a name
+      
     }
   });
   userPosts.associate = function(models) {
