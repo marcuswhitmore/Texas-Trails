@@ -7,6 +7,7 @@
     "cycling": true,
     "trails": [ {
         "name": "Upper Barton Creek Greenbelt",
+        "img": 1,
         "summary": "description of trail",
         "length":  5,
         "trailhead": [35, 5354],
@@ -17,6 +18,7 @@
         "dogs": true,
         "id": 1
         },{"name": "Lower Barton Creek Greenbelt",
+        "img": 1,
         "summary": "description of trail",
         "length": 3,
         "trailhead": [35, 5354],
@@ -25,7 +27,7 @@
         "averagegrade": 6,
         "maxgrade":  7,
         "dogs": true,
-        "id": 1
+        "id": 2
         }
     ]
     
