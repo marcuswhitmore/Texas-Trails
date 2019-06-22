@@ -17,10 +17,10 @@
   },
   "production": {
     "username": "h1iufk8kzes5e9vq",
-   "password": "e5w8bo4oru1r6gya",
-   "database": "wfmortghmomy5ehp",
-   "host": "u0zbt18wwjva9e0v.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-   "dialect": "mysql",
-   "operationsAliases": false
+    "password": "e5w8bo4oru1r6gya",
+    "database": "wfmortghmomy5ehp",
+    "host": "u0zbt18wwjva9e0v.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    "dialect": "mysql",
+    "operationsAliases": false
   }
 }
