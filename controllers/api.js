@@ -1,5 +1,5 @@
 var db = require("../models");
-
+const SELECT_ALL_PERSONS_QUERY = "SELECT * FROM thegroupthatworkz";
 
 module.exports = function(app) {
 
@@ -19,6 +19,12 @@ module.exports = function(app) {
         });
         
       });
+
+      app.get("/api/createuser", (req, res) => {
+        res.send("go to /persons to see missing people");
+       });
+       
+       
 
     };
 

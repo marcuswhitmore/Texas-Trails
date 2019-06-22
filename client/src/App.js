@@ -3,8 +3,21 @@ import Form from "./components/Form";
 import LoginBox from "./components/Login";
 import SignUp from "./components/SignUp";
 
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
 function App() {
-  return <LoginBox />;
+  return (
+    <Router>
+      <div>
+
+        <Route exact path="/" component={LoginBox} />
+        <Route path="/SignUp" component={SignUp} />
+        
+      </div>
+    </Router>
+  );
 }
+
+
 
 export default App;
