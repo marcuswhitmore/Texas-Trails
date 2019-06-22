@@ -4,7 +4,7 @@ import LoginBox from "./components/Login";
 import SignUp from "./components/SignUp";
 
 function App() {
-  return <SignUp />;
+  return <LoginBox />;
 }
 
 export default App;

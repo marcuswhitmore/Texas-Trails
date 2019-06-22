@@ -12,13 +12,14 @@ class SignUpBox extends Component {
     // Getting the value and name of the input which triggered the change
     // const { name, value } = event.target;
     const name = event.target.name;
+    const user = event.target.username;
     const password = event.target.password;
     const value = event.target.value;
     // Updating the input's state
     this.setState({
       [name]: value,
-      [password]:value
-
+      [password]: value,
+      [user]: value
     });
   };
 
@@ -26,8 +27,27 @@ class SignUpBox extends Component {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     event.preventDefault();
 
-    // Alert the user their first and last name, clear `this.state.firstName` and `this.state.lastName`, clearing the inputs
-    alert(`Hello ${this.state.userName} ${this.state.lastName}`);
+    var newUser = {
+      firstName: this.state.firstName,
+      lastName: this.state.lastName,
+      username: this.state.userName,
+      password: this.state.password,
+      favColor: this.state.colorName,
+      firstCar: this.state.carName
+    };
+    console.log(newUser);
+
+    fetch("/api/createuser", {
+      method: "POST",
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        firstParam: newUser,
+      })
+    });
+
     this.setState({
       userName: "",
       lastName: ""
@@ -38,7 +58,6 @@ class SignUpBox extends Component {
     // Notice how each input has a `value`, `name`, and `onChange` prop
     return (
       <div className="signUpBox">
-       
         <form className="form">
           <input
             value={this.state.firstName}
@@ -74,7 +93,6 @@ class SignUpBox extends Component {
             onChange={this.handleInputChange}
             type="text"
             placeholder="Security Question1:Favorite Color"
-
           />
           <input
             value={this.state.carName}
@@ -82,15 +100,12 @@ class SignUpBox extends Component {
             onChange={this.handleInputChange}
             type="text"
             placeholder="Security Question2:first car"
-            
           />
-          
-          
-          <button onClick={this.handleFormSubmit} className="submitButtons">create Account</button>
-          
-          
+
+          <button onClick={this.handleFormSubmit} className="submitButtons">
+            create Account
+          </button>
         </form>
-        
       </div>
     );
   }
