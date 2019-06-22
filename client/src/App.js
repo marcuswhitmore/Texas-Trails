@@ -4,9 +4,23 @@ import React from "react";
 // import SignUp from "./components/SignUp";
   import SVG from "./components/SVG/SVG";
 
-function App() {
-  return <SVG/>
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
+function App() {
+
+  return (
+    <Router>
+      <div>
+
+        <Route exact path="/" component={LoginBox} />
+        <Route path="/SignUp" component={SignUp} />
+        
+      </div>
+    </Router>
+  );
 }
 
+
+
 export default App;
+
