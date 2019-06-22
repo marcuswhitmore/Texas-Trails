@@ -1,0 +1,32 @@
+{
+    "name": "Barton Creek Greenbelt",
+    "parklocation": [25.2084, 55.2719],
+    "description": "park description",
+    "numberoftrails": 5,
+    "hiking": true,
+    "cycling": true,
+    "trails":  {
+        "name": "Upper Barton Creek Greenbelt",
+        "summary": "description of trail",
+        "length":  5,
+        "trailhead": [35, 5354],
+        "elevationascent": 299, 
+        "elevationdescent": 299,
+        "averagegrade": 2,
+        "maxgrade":  27,
+        "dogs": true
+        },{"name": "Lower Barton Creek Greenbelt",
+        "summary": "description of trail",
+        "length": 3,
+        "trailhead": [35, 5354],
+        "elevationascent": , 
+        "elevationdescent": ,
+        "averagegrade": ,
+        "maxgrade":  ,
+        "dogs": true
+        }
+    
+    
+  },
+
+// 
