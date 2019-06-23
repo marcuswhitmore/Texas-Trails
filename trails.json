@@ -252,7 +252,7 @@
     "hiking": true,
     "cycling": true,
     "trails":[{
-        "name": "Red Trail",
+        "name": "Slaughter Creek Trail",
         "img": 1,
         "summary": "description of trail",
         "length":  5,
