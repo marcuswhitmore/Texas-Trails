@@ -63,8 +63,20 @@
             "maxgrade":  7,
             "dogs": true,
             "id": 2
-            },
+            },\
     ]
     
+  }
+
+  { "name": "Bull Creek Watershed",
+    "parklocation": [25.2084, 55.2719],
+    "description": "park description",
+    "numberoftrails": 5,
+    "hiking": true,
+    "cycling": true,
+    "trails":[
+
+    ]
+
   }
 
