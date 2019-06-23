@@ -41,6 +41,17 @@
             "maxgrade":  7,
             "dogs": true,
             "id": 2
+        },{"name": "Violet Crown Trail",
+            "img": 1,
+            "summary": "description of trail",
+            "length": 3,
+            "trailhead": [35, 5354],
+            "elevationascent": 4, 
+            "elevationdescent": 5,
+            "averagegrade": 6,
+            "maxgrade":  7,
+            "dogs": true,
+            "id": 2
         }
     ]
     
