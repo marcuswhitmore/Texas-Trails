@@ -308,3 +308,53 @@
         
     ]
   }
+
+  {"name": "Mary Moore Searight Metropolitan Park",
+    "parklocation": [25.2084, 55.2719],
+    "description": "park description",
+    "numberoftrails": 5,
+    "hiking": true,
+    "cycling": true,
+    "trails":[{
+        "name": "Off Leash Trail",
+        "img": 1,
+        "summary": "description of trail",
+        "length":  5,
+        "trailhead": [35, 5354],
+        "elevationascent": 299, 
+        "elevationdescent": 299,
+        "averagegrade": 2,
+        "maxgrade":  27,
+        "dogs": true,
+        "cost": 0,
+        "gpx": "www.google.com",
+        "id": 1
+        },
+        
+    ]
+  }
+
+  {"name": "McKinney Falls State Park",
+    "parklocation": [25.2084, 55.2719],
+    "description": "park description",
+    "numberoftrails": 5,
+    "hiking": true,
+    "cycling": true,
+    "trails":[{
+        "name": "Turkey Creek Trail",
+        "img": 1,
+        "summary": "description of trail",
+        "length":  5,
+        "trailhead": [35, 5354],
+        "elevationascent": 299, 
+        "elevationdescent": 299,
+        "averagegrade": 2,
+        "maxgrade":  27,
+        "dogs": true,
+        "cost": 0,
+        "gpx": "www.google.com",
+        "id": 1
+        },
+        
+    ]
+  }
