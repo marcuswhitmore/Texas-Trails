@@ -341,7 +341,7 @@
     "hiking": true,
     "cycling": true,
     "trails":[{
-        "name": "Turkey Creek Trail",
+        "name": "Homestead Trail Loop",
         "img": 1,
         "summary": "description of trail",
         "length":  5,
