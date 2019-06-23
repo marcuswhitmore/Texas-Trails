@@ -252,7 +252,7 @@
     "hiking": true,
     "cycling": true,
     "trails":[{
-        "name": "Slaughter Creek Trail",
+        "name": "Turkey Creek Trail",
         "img": 1,
         "summary": "description of trail",
         "length":  5,
@@ -270,7 +270,7 @@
     ]
   }
 
-  {"name": "Bull Creek Watershed",
+  {"name": "Great Hills Park",
     "parklocation": [25.2084, 55.2719],
     "description": "park description",
     "numberoftrails": 5,
