@@ -102,6 +102,34 @@
             "cost": 0,
             "gpx": "www.google.com",
             "id": 1
+        },{
+            "name": "Saint Edwards Park Trail",
+            "img": 1,
+            "summary": "description of trail",
+            "length":  5,
+            "trailhead": [35, 5354],
+            "elevationascent": 299, 
+            "elevationdescent": 299,
+            "averagegrade": 2,
+            "maxgrade":  27,
+            "dogs": true,
+            "cost": 0,
+            "gpx": "www.google.com",
+            "id": 1
+        },{
+            "name": "Green Trail",
+            "img": 1,
+            "summary": "description of trail",
+            "length":  5,
+            "trailhead": [35, 5354],
+            "elevationascent": 299, 
+            "elevationdescent": 299,
+            "averagegrade": 2,
+            "maxgrade":  27,
+            "dogs": true,
+            "cost": 0,
+            "gpx": "www.google.com",
+            "id": 1
         },
 
     ]
