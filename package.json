@@ -31,8 +31,12 @@
     "express": "^4.17.1",
     "if-env": "^1.0.4",
     "mysql2": "^1.6.5",
+    "react-avatar": "^3.6.0",
+    "react-responsive-navbar": "^1.0.11",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
-    "sequelize": "^5.8.10"
+    "react-stack-grid": "^0.7.1",
+    "sequelize": "^5.8.10",
+    "swiper": "^4.5.0"
   }
 }
