@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import ResponsiveMenu from "react-responsive-navbar";
+import "./NavStyle.css";
 
 var style = {
   color: "Seashell",

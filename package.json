@@ -35,6 +35,7 @@
     "react-responsive-navbar": "^1.0.11",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
+    "react-spring": "^8.0.25",
     "react-stack-grid": "^0.7.1",
     "sequelize": "^5.8.10",
     "swiper": "^4.5.0"
