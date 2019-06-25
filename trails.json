@@ -1,33 +1,71 @@
 {
     "name": "Barton Creek Greenbelt",
-    "parklocation": [25.2084, 55.2719],
+    "parklocation": [30.2527, -97.8148],
     "description": "park description",
     "numberoftrails": 5,
     "hiking": true,
     "cycling": true,
     "trails": [ {
         "name": "Upper Barton Creek Greenbelt",
-        "summary": "description of trail",
+        "img": 1,
+        "summary": "Once you park off of Scottish Woods Trail Road and Camp Craft Road, you'll see the trailhead right at the top of Camp Craft Road. You'll immediately begin descending "The Hill of Life" section of the hike which covers three-hundred vertical feet in just over a third of a mile, and includes numerous obstacles, including loose rocks, limestone ledges and concrete erosion-block steps (up to a foot in height), plus plenty of roots and ruts. Once you have descended to the creek area, the hike is pretty straightforward as it winds around toward Barton Creek Falls and the sculptured rocks area for a nice rest/swim if you wish. This hike is definitely not for people who want a lazy day of hiking. Come ready for a workout and to enjoy working hard for your hiking experience.",
         "length":  5,
-        "trailhead": [35, 5354],
+        "trailhead": [30.2527, -97.8148],
         "elevationascent": 299, 
-        "elevationdescent": 299,
+        "elevationdescent": -299,
         "averagegrade": 2,
         "maxgrade":  27,
         "dogs": true,
+        "cost": 0,
+        "gpx": "https://www.hikingproject.com/trail/gpx/7036455",
         "id": 1
         },{"name": "Lower Barton Creek Greenbelt",
+        "img": 1,
         "summary": "description of trail",
-        "length": 3,
-        "trailhead": [35, 5354],
-        "elevationascent": 4, 
-        "elevationdescent": 5,
-        "averagegrade": 6,
-        "maxgrade":  7,
+        "length": 7.8,
+        "trailhead": [30.2527, -97.8148],
+        "elevationascent": 167, 
+        "elevationdescent": -167,
+        "averagegrade": 1,
+        "maxgrade":  4,
         "dogs": true,
-        "id": 1
-        }
+        "id": 2
+        },{"name": "Barton Creek Greenbelt Trail",
+            "img": 1,
+            "summary": "description of trail",
+            "length": 3.4,
+            "trailhead": [30.2527, -97.8148],
+            "elevationascent": 304, 
+            "elevationdescent": -20,
+            "averagegrade": 2,
+            "maxgrade":  28,
+            "dogs": true,
+            "id": 3
+        },{"name": "Violet Crown Trail",
+            "img": 1,
+            "summary": "description of trail",
+            "length": 5.4,
+            "trailhead": [30.2527, -97.8148],
+            "elevationascent": 149, 
+            "elevationdescent": -387,
+            "averagegrade": 2,
+            "maxgrade":  10,
+            "dogs": true,
+            "id": 4
+        },{"name": "Eagles Landing",
+            "img": 1,
+            "summary": "description of trail",
+            "length": 1.2,
+            "trailhead": [30.2527, -97.8148],
+            "elevationascent": 142, 
+            "elevationdescent": -139,
+            "averagegrade": 4,
+            "maxgrade":  27,
+            "dogs": true,
+            "id": 5
+            }
     ]
     
   }
 
+  
