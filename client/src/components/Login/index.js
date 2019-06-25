@@ -87,7 +87,7 @@ class LoginBox extends Component {
             className="submitButtons"
             id="signup"
           >
-            <Link to="/signup">Sign In</Link>
+            <Link to="/signup">Sign Up</Link>
           </button>
         </form>
         <div className="forgotPass">

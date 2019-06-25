@@ -4,11 +4,12 @@ import LoginBox from "./components/Login";
 import SignUp from "./components/SignUp";
 import SavedTrips from "./components/SavedTrips";
 import SVG from "./components/SVG";
-
+import User from "./components/User/User";
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function App() {
+
 
   const [value, setValue] = React.useState(
     localStorage.getItem("Authenticated") || ""
@@ -26,6 +27,8 @@ function App() {
           <Route path="/signup" component={SignUp} />
           <Route path="/user" component={SignUp} />
           <Route path="/savedposts" component={SignUp} />
+      <Route path="/user" component={User} />
+        <Route path="/landing" component={``} />
         </div>
       </Router>
     );
@@ -40,6 +43,7 @@ function App() {
       </Router>
     );
   }
+
 }
 
 export default App;
