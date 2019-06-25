@@ -15,22 +15,22 @@ class User extends Component {
             style={{ marginTop: "20px" }}
           />
         </div>
-        <div key="key2" style={{ marginTop: "20px" }}>
+        <div key="key2" style={{ marginTop: "20px", background: "seashell" }}>
           <span>📍{newUser.firstName}</span>
         </div>
-        <div key="key3" style={{ marginTop: "20px" }}>
+        <div key="key3" style={{ marginTop: "20px", background: "seashell" }}>
           Badges Earned:{" "}
         </div>
-        <div key="key4" style={{ marginTop: "20px" }}>
+        <div key="key4" style={{ marginTop: "20px", background: "seashell" }}>
           Trails Completed:{" "}
         </div>
-        <div key="key5" style={{ marginTop: "20px" }}>
+        <div key="key5" style={{ marginTop: "20px", background: "seashell" }}>
           Joined:
         </div>
-        <div key="key6" style={{ marginTop: "20px" }}>
+        <div key="key6" style={{ marginTop: "20px", background: "seashell" }}>
           Following:
         </div>
-        <div key="key7" style={{ marginTop: "20px" }}>
+        <div key="key7" style={{ marginTop: "20px", background: "seashell" }}>
           Followers:
         </div>
       </StackGrid>

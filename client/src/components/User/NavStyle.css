@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Cantora+One&display=swap");
 
+.navbar {
+  background: #228b22;
+}
+
 .navbar-brand {
   font-family: "Cantora", Courier, monospace;
-  background: "	#228B22";
   opacity: "0.9";
   color: "Seashell";
-  fontsize: 55;
+  font-size: 75;
 }
 
 li,
@@ -16,4 +19,5 @@ a {
   font-family: "Cantora", Courier, monospace;
   color: seashell;
   font-size: 17px;
+  float: right;
 }

@@ -3,16 +3,12 @@ import { Link } from "react-router-dom";
 import ResponsiveMenu from "react-responsive-navbar";
 import "./NavStyle.css";
 
-var style = {
-  color: "Seashell",
-  fontSize: 55
-};
 class Navbar extends Component {
   render() {
     return (
-      <nav style={{ background: "	#228B22", opacity: "0.9" }} className="navbar">
+      <nav className="navbar">
         <div className="container">
-          <Link style={style} className="navbar-brand" to="/landing">
+          <Link className="navbar-brand" to="/landing">
             Texas Trails
           </Link>
           <ResponsiveMenu
