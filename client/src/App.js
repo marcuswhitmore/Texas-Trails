@@ -3,14 +3,16 @@ import Form from "./components/Form";
 import LoginBox from "./components/Login";
 import SignUp from "./components/SignUp";
 import SavedTrips from "./components/SavedTrips";
-//import SVG from "./components/SVG/SVG";
+import SVG from "./components/SVG";
+
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 function App() {
+
   const [value, setValue] = React.useState(
     localStorage.getItem("Authenticated") || ""
-  );
+);
 
   React.useEffect(() => {
     localStorage.setItem("Authenticated", "false");

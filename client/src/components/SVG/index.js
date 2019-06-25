@@ -8,7 +8,7 @@ class SVG extends Component {render() {
       <header className="SVG-header">
         <img src={logo} className="SVG-logo" alt="logo" />
         <p>
-          Edit <code>./components/SVG/svg.js</code> and save to reload.
+          Edit <code>./components/SVG/index.js</code> and save to reload.
         </p>
         <a
           className="SVG-link"
