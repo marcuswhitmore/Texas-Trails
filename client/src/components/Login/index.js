@@ -6,7 +6,8 @@ class LoginBox extends Component {
   // Setting the component's initial state
   state = {
     userName: "",
-    lastName: ""
+    lastName: "",
+    
   };
 
   handleInputChange = event => {
@@ -29,26 +30,33 @@ class LoginBox extends Component {
       username: this.state.userName,
       password: this.state.password
     };
-    fetch(`/api/authenticate?user=${encodeURIComponent(credentials.username)}&p=${encodeURIComponent(credentials.password)}`, {
-      method: "GET",mode: "no-cors",headers:{
-        Accept: "application/json",
-        "Content-Type": "application/json"
+    fetch(
+      `/api/authenticate?user=${encodeURIComponent(
+        credentials.username
+      )}&p=${encodeURIComponent(credentials.password)}`,
+      {
+        method: "GET",
+        mode: "no-cors",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json"
+        }
       }
-      
-    }).then((response) => response.json())
-      .then((responseData) => {
-        console.log(responseData);
-        var userInfo ={
-          firstName:responseData.firstName,
-          lastName:responseData.lastName
-
-        };
-        localStorage.setItem("Authenticated",userInfo);
-        return responseData;
+    )
+      .then(response => response.json())
+      .then(responseData => {
+        if (responseData) {
+          console.log(responseData);
+          var userInfo = {
+            firstName: responseData.firstName,
+            lastName: responseData.lastName
+          };
+          localStorage.setItem("Authenticated", "true");
+          return responseData;
+        }
       })
       .catch(error => console.warn(error));
-  }
-
+  };
 
   render() {
     // Notice how each input has a `value`, `name`, and `onChange` prop
