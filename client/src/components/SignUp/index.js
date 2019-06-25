@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 class SignUpBox extends Component {
   // Setting the component's initial state
@@ -44,7 +45,7 @@ class SignUpBox extends Component {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        firstParam: newUser,
+        firstParam: newUser
       })
     });
 
@@ -103,7 +104,7 @@ class SignUpBox extends Component {
           />
 
           <button onClick={this.handleFormSubmit} className="submitButtons">
-            create Account
+            <Link to="/user">Create An Account</Link>
           </button>
         </form>
       </div>
