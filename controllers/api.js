@@ -1,5 +1,5 @@
 var db = require("../models");
-const SELECT_ALL_PERSONS_QUERY = "SELECT * FROM thegroupthatworkz";
+
 
 module.exports = function(app) {
 
@@ -19,10 +19,33 @@ module.exports = function(app) {
         });
         
       });
+      // app.get("/api/posts/category/:category", function(req, res) {
+      //   db.Post.findAll({
+      //     where: {
+      //       category: req.params.category
+      //     }
+      //   })
+      //     .then(function(dbPost) {
+      //       res.json(dbPost) ;
+      //     });
+      // });
+      app.get("/api/authenticate/", (req, res) => {
+      
+       console.log(req.query.user);
+        db.user.findOne({
 
-      app.get("/api/createuser", (req, res) => {
-        res.send("go to /persons to see missing people");
-       });
+          where:{
+            username:req.query.user,
+            password:req.query.p
+          }
+        }).then(function(dbuser) {
+          console.log(dbuser)
+          
+          res.json(dbuser)
+          
+        })
+       
+        });
        
        
 
