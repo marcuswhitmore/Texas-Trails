@@ -2,7 +2,9 @@ import React from "react";
 import Form from "./components/Form";
 import LoginBox from "./components/Login";
 import SignUp from "./components/SignUp";
-import SVG from "./components/SVG";
+import User from "./components/User/User";
+import SVG from "./components/SVG/SVG";
+
 
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
@@ -12,7 +14,8 @@ function App() {
       <div>
         <Route exact path="/" component={LoginBox} />
         <Route path="/signup" component={SignUp} />
-        <Route path="/SVG" componet={SVG}/>
+        <Route path="/user" component={User} />
+        <Route path="/landing" component={``} />
       </div>
     </Router>
   );
