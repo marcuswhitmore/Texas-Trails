@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Igniterson1995$",
+    "password": "",
     "database": "thegroupthatworkz",
     "host": "127.0.0.1",
     "dialect": "mysql",
@@ -9,7 +9,7 @@
   },
   "test": {
     "username": "root",
-    "password": "",
+    "password": "Cw506902",
     "database": "thegroupthatworkz",
     "host": "127.0.0.1",
     "dialect": "mysql",
