@@ -1,8 +1,8 @@
 var db = require("../models");
-const SELECT_ALL_PERSONS_QUERY = "SELECT * FROM thegroupthatworkz";
+
 
 module.exports = function(app) {
-
+//calls for user
     app.post("/api/createuser", function(req, res) {
         var newUser= req.body.firstParam;
 
@@ -14,15 +14,35 @@ module.exports = function(app) {
           firstCar: newUser.firstCar,
           username: newUser.username
         }).then(function(dbuser) {
-          // We have access to the new todo as an argument inside of the callback function
+        
           res.json(dbuser);
         });
         
       });
+     
+      app.get("/api/authenticate/", (req, res) => {
+      
+       console.log(req.query.user);
+        db.user.findOne({
 
-      app.get("/api/createuser", (req, res) => {
-        res.send("go to /persons to see missing people");
-       });
+          where:{
+            username:req.query.user,
+            password:req.query.p
+          }
+        }).then(function(dbuser) {
+          console.log(dbuser)
+          
+          res.json(dbuser)
+          
+        })
+       
+        });
+        //calls for user posts
+        app.post("/api/userposts", function(req, res) {
+          db.Post.create(req.body).then(function(dbPost) {
+            res.json(dbPost);
+          });
+        });
        
        
 
