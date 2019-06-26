@@ -1,3 +1,7 @@
+body {
+  background: #204F6F;
+}
+
 .form {
   margin: 30px;
 }
@@ -7,7 +11,7 @@
   margin-top: 5px;
   margin-bottom: 5px;
   width: 100%;
-  background-color: #ccff66;
+  background-color: #5AC4F0;
   color: #494949;
 }
 
@@ -16,8 +20,7 @@ input:focus {
 }
 
 .signUpBox {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#0ba360), to(#3cba92));
-  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+  background-image: #5AC4F0;
   margin: auto;
   margin-top: 10%;
   width: 50%;

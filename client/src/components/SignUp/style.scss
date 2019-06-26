@@ -1,3 +1,9 @@
+$base-color: #204F6F;
+$base-accent: #5AC4F0;
+
+body {
+  background: $base-color;
+}
 .form {
     margin: 30px;
 
@@ -8,7 +14,7 @@
     margin-top: 5px;
     margin-bottom: 5px;
     width: 100%;
-    background-color:#ccff66;
+    background-color:$base-accent;
     color:#494949;
 
   }
@@ -18,7 +24,7 @@
 }
 
 .signUpBox {
-  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+  background-image: $base-accent;
   
   margin:auto;
   margin-top:10%;

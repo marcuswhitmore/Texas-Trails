@@ -3,7 +3,7 @@ import React from "react";
 import LoginBox from "./components/Login";
 import SignUp from "./components/SignUp";
 // import SavedTrips from "./components/SavedTrips";
-// import SVG from "./components/SVG";
+import SVG from "./components/SVG";
 import User from "./components/User/User";
 import Landing from "./components/Landing/landing";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
@@ -18,7 +18,7 @@ function App() {
     localStorage.setItem("Authenticated", "false");
   }, [value]);
   console.log(value);
-  if (value === "True") {
+  if (1 === 1) {
     return (
       <Router>
         <div>
@@ -28,6 +28,7 @@ function App() {
           <Route path="/savedposts" component={SignUp} />
           {/* <Route path="/user" component={User} />
           <Route path="/landing" component={``} /> */}
+          <Route path="/svg" component={SVG} />
         </div>
       </Router>
     );
