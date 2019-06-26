@@ -4,7 +4,7 @@
 
 module.exports = function(sequelize, DataTypes) {
   var userPosts = sequelize.define("userPosts", {
-    name: {
+    trailname: {
       type: DataTypes.STRING,
       // If a customer is to be created, they must have a name
       
