@@ -3,7 +3,7 @@ import User from "./index";
 import Navbar from "./Navbar";
 import RenderImage from "./RenderPerson";
 
-function App() {
+function RenderProfile() {
   return (
     <div>
       <Navbar />
@@ -13,4 +13,4 @@ function App() {
   );
 }
 
-export default App;
+export default RenderProfile;
