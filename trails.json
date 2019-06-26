@@ -8,7 +8,7 @@
     "locationid":1,
     "trails": [ {
         "name": "Upper Barton Creek Greenbelt",
-        "img": 1,
+        "img": "https://i.imgur.com/bww5jun.jpg",
         "summary": "Once you park off of Scottish Woods Trail Road and Camp Craft Road, you'll see the trailhead right at the top of Camp Craft Road. You'll immediately begin descending \"The Hill of Life\" section of the hike which covers three-hundred vertical feet in just over a third of a mile, and includes numerous obstacles, including loose rocks, limestone ledges and concrete erosion-block steps (up to a foot in height), plus plenty of roots and ruts. Once you have descended to the creek area, the hike is pretty straightforward as it winds around toward Barton Creek Falls and the sculptured rocks area for a nice rest/swim if you wish. This hike is definitely not for people who want a lazy day of hiking. Come ready for a workout and to enjoy working hard for your hiking experience.",
         "length":  5,
         "trailhead": [30.2527, -97.8148],
