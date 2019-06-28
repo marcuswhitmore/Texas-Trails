@@ -1,5 +1,10 @@
-$base-color: #c6538c;
+$base-color: #204F6F;
+$base-accent: #5AC4F0;
+$form-border: whitesmoke;
 
+.body {
+  text-decoration: none;
+}
 .form {
     margin: 30px;
 
@@ -10,24 +15,23 @@ $base-color: #c6538c;
     margin-top: 5px;
     margin-bottom: 5px;
     width: 100%;
-    background-color:#ccff66;
-    color:#494949;
+    background-color: $base-accent;
+    color:$form-border;
 
   }
   input:focus {
-    outline-color:#223300;
+    outline-color:$form-border;
 
 }
 
 .loginBox {
-  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
-  
+  background-color: $base-accent; 
   margin:auto;
   margin-top:10%;
   width:50%;
   border-style:solid;
   border-radius: 25px;
-  border-color:#446600;
+  border-color:$form-border;
 
 }
 .submitButtons {
@@ -35,7 +39,7 @@ $base-color: #c6538c;
   text-transform: uppercase;
   background-image: linear-gradient(to top, #3cba92 0%, #0ba360 100%);
   
-  border: 4px solid #446600 !important;
+  border: 4px solid $form-border !important;
   border-radius: 6px;
   display: inline-block;
   }
@@ -45,8 +49,9 @@ $base-color: #c6538c;
   .submitButtons:hover {
     color: #494949 !important;
     border-radius: 50px;
-    border-color: #494949 !important;
+    border-color: $form-border;
     transition: all 0.3s ease 0s;
+    text-decoration: none;
     }
     #signup{
       float:right;
@@ -56,6 +61,24 @@ $base-color: #c6538c;
       margin-left:10%;
       width:80%;
       
+    }
+    .forgotPass:hover{
+      color: white;
+    }
+    a:link {
+      text-decoration: none;
+    }
+    
+    a:visited {
+      text-decoration: none;
+    }
+    
+    a:hover {
+      text-decoration: none;
+    }
+    
+    a:active {
+      text-decoration: none;
     }
     
     
