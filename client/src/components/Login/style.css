@@ -1,3 +1,7 @@
+.body {
+  text-decoration: none;
+}
+
 .form {
   margin: 30px;
 }
@@ -7,23 +11,22 @@
   margin-top: 5px;
   margin-bottom: 5px;
   width: 100%;
-  background-color: #ccff66;
-  color: #494949;
+  background-color: #5AC4F0;
+  color: whitesmoke;
 }
 
 input:focus {
-  outline-color: #223300;
+  outline-color: whitesmoke;
 }
 
 .loginBox {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#0ba360), to(#3cba92));
-  background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+  background-color: #5AC4F0;
   margin: auto;
   margin-top: 10%;
   width: 50%;
   border-style: solid;
   border-radius: 25px;
-  border-color: #446600;
+  border-color: whitesmoke;
 }
 
 .submitButtons {
@@ -31,7 +34,7 @@ input:focus {
   text-transform: uppercase;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#3cba92), to(#0ba360));
   background-image: linear-gradient(to top, #3cba92 0%, #0ba360 100%);
-  border: 4px solid #446600 !important;
+  border: 4px solid whitesmoke !important;
   border-radius: 6px;
   display: inline-block;
 }
@@ -43,9 +46,10 @@ input:focus {
 .submitButtons:hover {
   color: #494949 !important;
   border-radius: 50px;
-  border-color: #494949 !important;
+  border-color: whitesmoke;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+  text-decoration: none;
 }
 
 #signup {
@@ -56,5 +60,25 @@ input:focus {
   margin-top: 10px;
   margin-left: 10%;
   width: 80%;
+}
+
+.forgotPass:hover {
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
