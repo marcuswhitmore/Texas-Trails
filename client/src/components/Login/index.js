@@ -1,13 +1,15 @@
 import React, { Component } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
+import { Route, Redirect } from "react-router";
 
-class LoginBox extends Component {
+class Login extends Component {
   // Setting the component's initial state
   state = {
     userName: "",
     lastName: "",
-    
+    authen: false,
+    persons: []
   };
 
   handleInputChange = event => {
@@ -22,10 +24,13 @@ class LoginBox extends Component {
       [password]: value
     });
   };
+  handleSignUp = event => {
+    event.preventDefault();
+  };
 
   handleFormSubmit = event => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
-    event.preventDefault();
+    
+   
     var credentials = {
       username: this.state.userName,
       password: this.state.password
@@ -43,19 +48,16 @@ class LoginBox extends Component {
         }
       }
     )
-      .then(response => response.json())
-      .then(responseData => {
-        if (responseData) {
-          console.log(responseData);
-          var userInfo = {
-            firstName: responseData.firstName,
-            lastName: responseData.lastName
-          };
-          localStorage.setItem("Authenticated", "true");
-          return responseData;
-        }
+      .then(function(response) {
+        return response.json();
       })
-      .catch(error => console.warn(error));
+      .then(function(data) {
+        console.log(data);
+        if (data.id) {
+          localStorage.setItem("Authenticated", "true");
+          localStorage.setItem("userID", data.id);
+        }
+      });
   };
 
   render() {
@@ -75,19 +77,15 @@ class LoginBox extends Component {
             value={this.state.password}
             name="password"
             onChange={this.handleInputChange}
-            type="text/password"
+            type="password"
             placeholder="password"
           />
 
           <button onClick={this.handleFormSubmit} className="submitButtons">
-            <Link to="/user">Login</Link>
+            Login
           </button>
-          <button
-            onClick={this.handleFormSubmit}
-            className="submitButtons"
-            id="signup"
-          >
-            <Link to="/signup">Sign Up</Link>
+          <button className="submitButtons" id="signup" onClick={this.handleSignUp} >
+         <Link to="signup"> Sign Up </Link>
           </button>
         </form>
         <div className="forgotPass">
@@ -98,4 +96,27 @@ class LoginBox extends Component {
   }
 }
 
-export default LoginBox;
+export default Login;
+// class Register extends React.Component {
+//   state = {
+//     toDashboard: false,
+//   }
+//   handleSubmit = (user) => {
+//     saveUser(user)
+//       .then(() => this.setState(() => ({
+//         toDashboard: true
+//       })))
+//   }
+//   render() {
+//     if (this.state.toDashboard === true) {
+//       return <Redirect to='/dashboard' />
+//     }
+
+//     return (
+//       <div>
+//         <h1>Register</h1>
+//         <Form onSubmit={this.handleSubmit} />
+//       </div>
+//     )
+//   }
+//  }

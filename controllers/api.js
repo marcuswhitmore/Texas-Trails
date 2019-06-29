@@ -21,7 +21,7 @@ module.exports = function(app) {
       });
      
       app.get("/api/authenticate/", (req, res) => {
-      
+        
        console.log(req.query.user);
         db.user.findOne({
 
@@ -38,12 +38,17 @@ module.exports = function(app) {
        
         });
         //calls for user posts
-        app.post("/api/userposts", function(req, res) {
-          db.Post.create(req.body).then(function(dbPost) {
-            res.json(dbPost);
+        app.get("/api/userposts/", function(req, res) {
+          var id = req.query.id
+          db.users.findOne({
+            where: {
+              id: req.params.id
+            },
+            include: [db.userPosts]
+          }).then(function(response) {
+            res.json(response);
           });
         });
-       
        
 
     };

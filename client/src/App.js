@@ -1,13 +1,14 @@
 import React from "react";
 // import Form from "./components/Form";
-import LoginBox from "./components/Login";
+import Login from "./components/Login";
 import SignUp from "./components/SignUp";
-// import SavedTrips from "./components/SavedTrips";
+import SavedTrips from "./components/SavedTrips";
 import SVG from "./components/SVG";
 import User from "./components/User/User";
 import Landing from "./components/Landing/landing";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import RenderProfile from "./components/User/User";
+import { Redirect } from "react-router";
 
 function App() {
   const [value, setValue] = React.useState(
@@ -15,36 +16,35 @@ function App() {
   );
 
   React.useEffect(() => {
-    localStorage.setItem("Authenticated", "false");
+    localStorage.getItem("Authenticated");
   }, [value]);
-  console.log(value);
-  if (1 === 1) {
-    return (
-      <Router>
-        <div>
-          <Route exact path="/" component={LoginBox} />
-          <Route path="/signup" component={SignUp} />
-          <Route path="/user" component={SignUp} />
-          <Route path="/savedposts" component={SignUp} />
-          {/* <Route path="/user" component={User} />
-          <Route path="/landing" component={``} /> */}
-          <Route path="/svg" component={SVG} />
-        </div>
-      </Router>
-    );
-  } else if ("1" === "1") {
-    return (
-      <Router>
-        <div>
-          {/* <RenderProfile /> */}
-          <Route exact path="/" component={LoginBox} />
-          <Route path="/signup" component={SignUp} />
-          <Route path="/user" component={RenderProfile} />
-          <Route path="/landing" component={Landing} />
-        </div>
-      </Router>
-    );
-  }
-}
 
+  return (
+    
+    <Router>
+      <div>
+        <Route
+          exact
+          path="/"
+          render={() =>
+            value ? <Redirect to="/user/" /> : <Login />
+          }
+        />
+        <Route path="/signup" component={SignUp} />
+        <Route path="/user" component={User} />
+        <Route path="/landing" component={Landing} />
+      </div>
+    </Router>
+  );
+}
 export default App;
+
+{
+  /* <Route exact path="/" render={() => (
+  loggedIn ? (
+    <Redirect to="/dashboard"/>
+  ) : (
+    <PublicHomePage/>
+  )
+)}/> */
+}
