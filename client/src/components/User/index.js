@@ -4,7 +4,33 @@ import Avatar from "react-avatar";
 import newUser from "../SignUp/index";
 
 class User extends Component {
+  getTrips = event => {
+    fetch(
+      `/api/userposts/?id=${encodeURIComponent(
+        localStorage.getItem("userID")
+      )}`,
+      {
+        method: "GET",
+        mode: "no-cors",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json"
+        }
+      }
+    )
+      .then(response => response.json())
+      .then(response => {
+        console.log(response);
+
+        return response;
+      })
+      .catch(error => console.warn(error));
+  };
+  
+
   render() {
+    
+    
     return (
       <StackGrid columnWidth={325}>
         <div key="key1">

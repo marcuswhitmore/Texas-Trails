@@ -31,8 +31,10 @@ function App() {
         />
         <Route path="/signup" component={SignUp} />
         <Route path="/user" component={User} />
+
         <Route path="/landing" component={Atlas} />
         <Route path="/trails" component={Compass} />
+
       </div>
     </Router>
   );

@@ -8,7 +8,7 @@ class Login extends Component {
   state = {
     userName: "",
     lastName: "",
-    authen: false,
+   
     persons: []
   };
 
@@ -24,9 +24,7 @@ class Login extends Component {
       [password]: value
     });
   };
-  handleSignUp = event => {
-    event.preventDefault();
-  };
+  
 
   handleFormSubmit = event => {
     var credentials = {
@@ -51,9 +49,10 @@ class Login extends Component {
       })
       .then(function(data) {
         console.log(data);
-        if (data.id) {
+        if (data) {
           localStorage.setItem("Authenticated", "true");
           localStorage.setItem("userID", data.id);
+          return data;
         }
       });
   };

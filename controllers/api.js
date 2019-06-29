@@ -39,19 +39,47 @@ module.exports = function(app) {
         });
         //calls for user posts
         app.get("/api/userposts/", function(req, res) {
-          var id = req.query.id
-          db.users.findOne({
+          console.log(req.query.id)
+          db.user.findOne({
             where: {
-              id: req.params.id
+              id: req.query.id
             },
             include: [db.userPosts]
           }).then(function(response) {
             res.json(response);
           });
         });
+        // call for getting single user
+        app.get("/api/getuser/", function(req, res) {
+          
+          
+          db.user.findOne({
+            where: {
+              id: req.query.id
+            },
+          }).then(function(response) {
+            res.json(response);
+          });
+        });
+
+        // add a post
+        app.post("/api/newposts", function(req, res) {
+          var newPost= req.body.firstParam;
+            console.log(newPost);
+          db.userPosts.create({
+            trailname:newPost.trailname ,
+            name:newPost.name,
+            userId:newPost.userId
+          }).then(function(dbuserPosts) {
+          
+            res.json(dbuserPosts);
+          });
+          
+        });
        
 
     };
+    
 
 
 

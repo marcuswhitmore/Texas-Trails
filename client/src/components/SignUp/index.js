@@ -103,7 +103,7 @@ class SignUpBox extends Component {
             placeholder="Security Question2:first car"
           />
 
-          <button onClick={this.handleFormSubmit} className="submitButtons">
+          <button onClick={this.handleFormSubmit} className="signupButtons">
             <Link to="/">Create An Account</Link>
           </button>
         </form>
