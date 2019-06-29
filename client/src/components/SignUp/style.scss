@@ -67,6 +67,28 @@ body {
       
 
     }
+    .signupButtons {
+      color: #494949 ;
+      text-transform: uppercase;
+      background: $base-color;
+      font-family: "Cantora", Courier, monospace;
+
+      border: 4px solid whitesmoke ;
+      border-radius: 6px;
+      display: inline-block;
+      }
+      .signupButtons:focus {
+        outline:0;
+      }
+      .signupButtons:hover {
+        color: #494949 ;
+        font-family: "Cantora", Courier, monospace;
+
+        border-radius: 50px;
+        border-color: #494949 ;
+        transition: all 0.3s ease 0s;
+        }
+        
     
     
   

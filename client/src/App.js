@@ -33,6 +33,7 @@ function App() {
         <Route path="/signup" component={SignUp} />
         <Route path="/user" component={User} />
         <Route path="/landing" component={Landing} />
+        <Route path="/test" component={SavedTrips} />
       </div>
     </Router>
   );

@@ -8,7 +8,7 @@ class Login extends Component {
   state = {
     userName: "",
     lastName: "",
-    authen: false,
+   
     persons: []
   };
 
@@ -24,13 +24,9 @@ class Login extends Component {
       [password]: value
     });
   };
-  handleSignUp = event => {
-    event.preventDefault();
-  };
+  
 
   handleFormSubmit = event => {
-    
-   
     var credentials = {
       username: this.state.userName,
       password: this.state.password
@@ -53,9 +49,10 @@ class Login extends Component {
       })
       .then(function(data) {
         console.log(data);
-        if (data.id) {
+        if (data) {
           localStorage.setItem("Authenticated", "true");
           localStorage.setItem("userID", data.id);
+          return data;
         }
       });
   };
@@ -84,8 +81,12 @@ class Login extends Component {
           <button onClick={this.handleFormSubmit} className="submitButtons">
             Login
           </button>
-          <button className="submitButtons" id="signup" onClick={this.handleSignUp} >
-         <Link to="signup"> Sign Up </Link>
+          <button
+            className="submitButtons"
+            id="signup"
+            onClick={this.handleSignUp}
+          >
+            <Link to="signup"> Sign Up </Link>
           </button>
         </form>
         <div className="forgotPass">
