@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+    "google-map-react": "^1.1.4",
     "if-env": "^1.0.4",
     "mysql2": "^1.6.5",
     "react-avatar": "^3.6.0",

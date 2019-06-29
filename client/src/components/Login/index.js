@@ -29,8 +29,6 @@ class Login extends Component {
   };
 
   handleFormSubmit = event => {
-    
-   
     var credentials = {
       username: this.state.userName,
       password: this.state.password
@@ -84,8 +82,12 @@ class Login extends Component {
           <button onClick={this.handleFormSubmit} className="submitButtons">
             Login
           </button>
-          <button className="submitButtons" id="signup" onClick={this.handleSignUp} >
-         <Link to="signup"> Sign Up </Link>
+          <button
+            className="submitButtons"
+            id="signup"
+            onClick={this.handleSignUp}
+          >
+            <Link to="signup"> Sign Up </Link>
           </button>
         </form>
         <div className="forgotPass">
