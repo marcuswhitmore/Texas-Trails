@@ -85,7 +85,7 @@ class SignUpBox extends Component {
             value={this.state.password}
             name="password"
             onChange={this.handleInputChange}
-            type="text"
+            type="password"
             placeholder="password"
           />
           <input
@@ -104,7 +104,7 @@ class SignUpBox extends Component {
           />
 
           <button onClick={this.handleFormSubmit} className="submitButtons">
-            <Link to="/user">Create An Account</Link>
+            <Link to="/">Create An Account</Link>
           </button>
         </form>
       </div>
