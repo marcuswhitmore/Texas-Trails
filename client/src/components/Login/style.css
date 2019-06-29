@@ -11,7 +11,7 @@
   margin-top: 5px;
   margin-bottom: 5px;
   width: 100%;
-  background-color: #5AC4F0;
+  background-color: #5ac4f0;
   color: whitesmoke;
 }
 
@@ -20,7 +20,7 @@ input:focus {
 }
 
 .loginBox {
-  background-color: #5AC4F0;
+  background-color: #5ac4f0;
   margin: auto;
   margin-top: 10%;
   width: 50%;
@@ -32,7 +32,13 @@ input:focus {
 .submitButtons {
   color: whitesmoke !important;
   text-transform: uppercase;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#3cba92), to(#0ba360));
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#3cba92),
+    to(#0ba360)
+  );
   background-image: linear-gradient(to top, #3cba92 0%, #0ba360 100%);
   width: 110px;
   height: 52px;
@@ -82,5 +88,8 @@ a:hover {
 
 a:active {
   text-decoration: none;
+}
+.loginbutton {
+  color: seashell;
 }
 /*# sourceMappingURL=style.css.map */
